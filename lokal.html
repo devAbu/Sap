@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
+        <title>SaP</title>
+    </head>
+    <body>
+        <div class="container-fluid topBar">
+            <a class="appNav col-xs-2"><span class="fa fa-navicon"></span></a>
+            <a class="topTitle col-xs-10">Kafa</a>
+        </div>
+
+        <div class="sideBarWrap container-fluid col-xs-12">
+            <!--Card-->
+            <div class="card sideBar">
+                <!--Card content-->
+                <!--Title-->
+                <div class="card-title SideBarTitle">
+                    <a class="closeSideBar"><span class="fa fa-arrow-left"></span></a>
+                </div>
+                <div class="card-body">
+                    <!--Text-->
+                    <div class="card-text">
+                        <div class="sideTitle">Sap</div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="sideBtn sideFeatBtn">
+                                    <span class="fa fa-star fa-fw sideIcon"></span><br>
+                                    <a>Preporučeni</a>
+                                </div>
+                                <div class="sideBtn sideFavBtn">
+                                    <span class="fa fa-heart fa-fw sideIcon"></span><br>
+                                    <a>Favoriti</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideItem sideHomeBtn"><span class="fa fa-home fa-fw"></span> Početna</div>
+                        <div class="sideItem sideMapBtn"><span class="fa fa-map-marker fa-fw"></span> Šta mi je blizu?</div>
+                        <div><hr></div>
+                        <div class="sideItem sideOptionsBtn"><span class="fa fa-gear fa-fw"></span> Postavke</div>
+                    </div>
+                </div>
+                <!--/.Card content-->
+            </div>
+            <!--/.Card-->
+        </div>
+
+        <div class="app container-fluid">
+            <!--intro-->
+            <div class="introSection row">
+                <div class="col-12">
+                    <div class="row">
+                        <img class="img-fluid lokalImage" src="./img/img (97).jpg">
+                        <div class="col introText">
+                            <h4 class="lokalName">IME</h4>
+                            <p class="kat"><em>kat1,kat2,kat3</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--intro-->
+
+            <!--map Section-->
+            <div class="mapSection row">
+                <div class="mapSpacer col-4">
+                    
+                </div>
+                <div id="map" class="mapWrap pull-right col-8">
+                    
+                </div>
+                <div class="mapLnk col-12">
+                    <div class="row">
+                        <div class="col-8">
+                            <p class="introLbl">Adresa:</p>
+                            <p><strong class="lokalAdres">Bulevar Meše Selimovića 1</strong></p>
+                            <p class="introLbl">Radno vrijeme:</p>
+                            <p><strong class="lokalAdres">8:00 - 23:30</strong></p>
+                        </div>
+                        <div class="col-4">
+                            <img src="./img/logo.png" width="100%" id="gMapsLokalIcon">
+                            <p class="cT">Navigacija</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--map Section-->
+
+            <!--contact info section-->
+            <div class="contactSection row">
+                <div class="fbInfo btn">
+                    <h6><span class="fa fa-facebook"></span> Facebook page</h6>
+                </div>
+                <div class="phoneInfo btn">
+                    <h6><span class="fa fa-phone"></span> +38733-831-138</h6>
+                </div>
+            </div>
+            <!--contact info section-->
+            <!--check list section-->
+            <div class="checkListSection row">
+                <div class="col-6">
+                    <span class="fa fa-cutlery"></span> Poslužuje hranu <span class="fa fa-check"></span>
+                </div>
+                <div class="col-6">
+                    <span class="fa fa-bookmark"></span> Prima rezervacije <span class="fa fa-close"></span>
+                </div>
+                <div class="col-12">
+                    <hr>
+                </div>
+                <div class="col-6">
+                    <span class="fa fa-heart"></span> 54 sviđanja
+                </div>
+                <div class="col-6">
+                    <span class="fa fa-heartbeat"></span> 4 nesviđanja
+                </div>
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div>
+            <!--check list section-->
+            <!--News-->
+            <div class="lokalNewsSection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="introLbl">Novosti:</p>
+                        </div>
+                    </div>
+                    <div class="row newsList">
+                        <div class="col-xs-12 col-md-6">
+                            <div class="novost row">
+                                <div class="col">
+                                    <img src="./img/c3.png" width="100%">
+                                </div>
+                                <div class="novost-text col-8">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="novost row">
+                                <div class="col">
+                                    <img src="./img/c3.png" width="100%">
+                                </div>
+                                <div class="novost-text col-8">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="novost row">
+                                <div class="col">
+                                    <img src="./img/c3.png" width="100%">
+                                </div>
+                                <div class="novost-text col-8">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                <hr>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="novost row">
+                                <div class="col">
+                                    <img src="./img/c3.png" width="100%">
+                                </div>
+                                <div class="novost-text col-8">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <!--News-->
+            <!--Coments-->
+            <div class="commentSection">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="introLbl">Komentari:</p>
+                        <button class="btn writeCommentBtn">Komentariši</button>
+                    </div>
+                </div>
+                <div class="commentList row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="card commentCard">
+                            <div class="card-body">
+                                <div class="card-text commentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="card commentCard">
+                            <div class="card-body">
+                                <div class="card-text commentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="card commentCard">
+                            <div class="card-body">
+                                <div class="card-text commentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card writeComentCard">
+                            <div class="card-body">
+                                <p class="introLbl">Vaš komentar:</p>
+                                <textarea class="newCommentText" placeholder="Upišite vaš komentar..."></textarea>
+                                <button class="col-5 btn postCommentBtn"><span class="fa fa-paper-plane-o"></span> Pošalji</button>
+                                <button class="col-5 btn cancelCommentBtn"><span class="fa fa-close"></span> Odustani</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <!--Coments-->
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/lokal.js"></script>
+    </body>
+</html>

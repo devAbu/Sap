@@ -1,0 +1,51 @@
+////////////////						   		API			 					   ////////////////
+
+
+				- izlistaj sve vijesti koje se trebaju pokazat na homepage (VIJEST)
+					request-data: ništa
+					response: JSON vijesti (sve) --> uradjeno
+
+				- prikaži sve događaje (EVENT)
+					request-data: nista
+					response: JSON događaji (sve), poredano po datumu (ovi sto ce biti prije idu na vrh) --> uradjeno
+
+				- prikaži sve događaje koji su vezani za kategoriju --> (katlolokal --> event) (KATEGORIJAEVENT) 5 izbrisat
+					request-data: ime kategorije
+					response: JSON događaji (sve) --> uradjeno preko lokalID...lose informacije imam (posebno po imenu) --> uradjeno
+
+				- prikaži preporucene lokale u kategoriji --> sponzored (katlolokal --> lokal) (LOKALSPON)
+					request-data: ime kategorije, geolokacija korisnika(nije obavezno)
+					response: JSON lokali (ime, id, slika169)
+					//poredano po udaljenosti od korisnika ako je geolokacija dostupna limit 2 --> uradjeno
+
+				- prikaži sve lokale u kategoriji (katlokal --> lokal) (KATEGORIJALOKAL)
+					request-data: ime kategorije, geolokacija korisnika(nije obavezno)
+					response: JSON lokali (ime, adresa, id, slika11, opis, kategorije)
+					//poredano po udaljenosti od korisnika ako je geolokacija dostupna --> uradjeno
+
+				- prikaži informacije potrebne za kartu svih lokala iz svih kategorija (lokal otprilike sve --> katlolokal) (KARTALOKAL ili 2)
+					request-data: geolokacija korisnika
+					response: JSON (ime, slika11, lat, lng, adresa, kategorije, id)
+					//poredano po udaljenosti od korisnika ako je geolokacija dostupna --> skoro ko lokal/id samo sve lokale prikazat --> uradjeno
+
+				- prikaži informacije potrebne za kartu svih lokala iz jedne kategorije (kattolokal --> lokal) (KARTALOKAL/ime ili 2)
+					request-data: geolokacija korisnika, ime kategorije
+					response: JSON (ime, slika11, lat, lng, adresa, id)
+					//poredano po udaljenosti od korisnika ako je geolokacija dostupna -> isto ko ovaj gore samo koristit &Kategorijaid --> uradjeno
+
+				- prikaži informacije o izabranom lokalu (za profil lokala) (LOKAL)
+					request-data: id lokala
+					response: JSON (skoro sve :) , katogirja, ocjena i kom -> dodat --> dodano
+					//kad dođe request increment broj pregleda -->uradjeno
+
+				- prikaži komentare o izabranom lokalu (za profil lokala) (KOMENTAR)
+					request-data: id lokala
+					response: JSON svi komentari --> uradjeno
+
+				- snimi komentar (napravit api za snimanje) --> imal front-end..forma (1 field) (KOMENTAR2)
+					request-data: id lokala, sadrzaj komentara
+					response: JSON svi komentari --> valjda je dobro
+
+				- update ocjenu lokala --> kako je zelite updatovat..po cemu cu gleadat? (snimanje u bazu...like i dislike) (OCJENAUPDATE)
+					request-data: id lokala, ocjena
+					response: nije obavezno ništa --> valjda uradjeno

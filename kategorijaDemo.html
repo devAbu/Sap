@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
+        <title>SaP</title>
+    </head>
+    <body>
+        <div class="container-fluid topBar">
+            <a class="appNav col-xs-2"><span class="fa fa-navicon"></span></a>
+            <a class="col-xs-10">Kafa</a>
+        </div>
+
+        <div class="sideBarWrap container-fluid col-xs-12">
+            <!--Card-->
+            <div class="card sideBar">
+                <!--Card content-->
+                <!--Title-->
+                <div class="card-title SideBarTitle">
+                    <a class="closeSideBar"><span class="fa fa-arrow-left"></span></a>
+                </div>
+                <div class="card-body">
+                    <!--Text-->
+                    <div class="card-text">
+                        <div class="sideTitle">Sap</div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="sideBtn sideFeatBtn">
+                                    <span class="fa fa-star fa-fw sideIcon"></span><br>
+                                    <a>Preporučeni</a>
+                                </div>
+                                <div class="sideBtn sideFavBtn">
+                                    <span class="fa fa-heart fa-fw sideIcon"></span><br>
+                                    <a>Favoriti</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideItem sideHomeBtn"><span class="fa fa-home fa-fw"></span> Početna</div>
+                        <div class="sideItem sideMapBtn"><span class="fa fa-map-marker fa-fw"></span> Šta mi je blizu?</div>
+                        <div><hr></div>
+                        <div class="sideItem sideOptionsBtn"><span class="fa fa-gear fa-fw"></span> Postavke</div>
+                    </div>
+                </div>
+                <!--/.Card content-->
+            </div>
+            <!--/.Card-->
+        </div>
+
+        <div class="app container-fluid">
+            <!--filters-->
+            <div class="filterSection row">
+                <div class="flterBtnsWrap card col-12">
+                    <div class="row">
+                        <button class="col btn filterBtn active" data-section="event">Događaji</button>
+                        <button class="col btn filterBtn " data-section="lokal">Lokali</button>
+                        <button class="col btn filterBtn">Vaši favoriti</button>
+                    </div>
+                </div>
+                <div class="filterOptWrap card col-12">
+                    
+                </div>
+            </div>
+            <!--filters-->
+             
+            <!--featured select-->
+            <div class="featSection row">
+                <div class="card col">
+                    <div class="mainPageCard card-body row">
+                        <div class="col-12 sectionTitle"><span class="fa fa-star"></span> Mi vam preporučujemo</div>
+                        <!-- items -->
+                        <div class="col-6 itemCard">
+                            <div class=" card">
+                                <img class="img-fluid" src="https://www.holiday-link.com/data/holiday/sova-caffe-bar-593-split_149034933606.jpg" alt="Card image cap">
+                            </div>
+                        </div>
+                        <div class="col-6 itemCard">
+                            <div class=" card">
+                                <img class="img-fluid" src="http://polapara.ba/wp-content/uploads/2015/03/boulevard_banner-300x169.png" alt="Card image cap">
+                            </div>
+                        </div>
+                        <!-- items -->
+                    </div>
+                </div>
+            </div>
+            <!--featured select-->
+
+            <!--News section-->
+            <div class="newsSection row section" data-section="event">
+                <div class="col">
+                    <div class="mainPageCard card-body row">
+                        <div class="col-12 sectionTitle"><span class="fa fa-calendar"></span> Najnovija dešavanja</div>
+                        <div class="col-12">
+                            <div class="newsItems row">
+                            <!--items-->
+                            <div class="newsItemWrap col-12">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="newsImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHRgUTwnN3be-pz__fnpxEp--6c2tsmWWWcGLaRT7syAjuVVa" width="100%">
+                                    </div>
+                                    <div class="col newsTxt">
+                                        <h4 class="newsTitle">News Title</h4>
+                                        <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="newsItemWrap col-12">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="newsImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzrjuytqAI6KnYu4C15iV1aFYdmocGp_7w1zqJEoiaxHWPv2hKA" width="100%">
+                                    </div>
+                                    <div class="col newsTxt">
+                                        <h4 class="newsTitle">News Title</h4>
+                                        <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--items-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--News section-->
+
+            <!--lokali section-->
+            <div class="lokaliSection row section" data-section="lokal">
+                <div class="col">
+                    <div class="mainPageCard card-body row">
+                        <div class="col-12 sectionTitle"><span class="fa fa-map-marker"></span> Lokali</div>
+                        <div class="col-12">
+                            <div class="newsItems row">
+                            <!--items-->
+                            <div class="lokalItemWrap col-12" data-lokalID="Lokal Demo">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsHRgUTwnN3be-pz__fnpxEp--6c2tsmWWWcGLaRT7syAjuVVa" width="100%">
+                                    </div>
+                                    <div class="col newsTxt">
+                                        <h4 class="lokalTitle">IME</h4>
+                                        <p class="lokalDesc"><b>ADRESA, </b>kratak opis nešto malo o ovom mjestu da piše samo par riječi ništa puno<br><em>kat1, kat2, kat3</em></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="lokalItemWrap col-12" data-lokalID="Lokal Demo">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzrjuytqAI6KnYu4C15iV1aFYdmocGp_7w1zqJEoiaxHWPv2hKA" width="100%">
+                                    </div>
+                                    <div class="col newsTxt">
+                                        <h4 class="lokalTitle">IME</h4>
+                                        <p class="lokalDesc"><b>ADRESA, </b>kratak opis nešto malo o ovom mjestu da piše samo par riječi ništa puno<br><em>kat1, kat2, kat3</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--items-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--lokali section-->
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+        <script type="text/javascript" src="js/kategorija.js"></script>
+    </body>
+</html>

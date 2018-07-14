@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Your custom styles (optional) -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+        
+        <title>SaP</title>
+    </head>
+    <body>
+        <div class="container-fluid topBar">
+            <a class="appNav col-xs-2"><span class="fa fa-navicon"></span></a>
+            <a class="col-xs-10">SAp</a>
+        </div>
+
+        <div class="sideBarWrap container-fluid col-xs-12">
+            <!--Card-->
+            <div class="card sideBar">
+                <!--Card content-->
+                <!--Title-->
+                <div class="card-title SideBarTitle">
+                    <a class="closeSideBar"><span class="fa fa-arrow-left"></span></a>
+                </div>
+                <div class="card-body">
+                    <!--Text-->
+                    <div class="card-text">
+                        <div class="sideTitle">SAp</div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="sideBtn sideFeatBtn">
+                                    <span class="fa fa-star fa-fw sideIcon"></span><br>
+                                    <a>Preporučeni</a>
+                                </div>
+                                <div class="sideBtn sideFavBtn">
+                                    <span class="fa fa-heart fa-fw sideIcon"></span><br>
+                                    <a>Favoriti</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sideItem sideHomeBtn"><span class="fa fa-home fa-fw"></span> Početna</div>
+                        <div class="sideItem sideMapBtn"><span class="fa fa-map-marker fa-fw"></span> Šta mi je blizu?</div>
+                        <div><hr></div>
+                        <div class="sideItem sideOptionsBtn"><span class="fa fa-gear fa-fw"></span> Postavke</div>
+                    </div>
+                </div>
+                <!--/.Card content-->
+            </div>
+            <!--/.Card-->
+        </div>
+
+        <div class="app container-fluid">
+            <!--City Image section-->
+            <div id="cityImgContainer" class="cityImgContainer row">
+            </div>
+            <!--City Image section-->
+
+            <!--Category select-->
+            <div id="catSelectHome" class="catSelect row">
+                <div class="imgTextWrap col-12">
+                    <label class="imgLable"><span class="fa fa-location-arrow"></span> Lokacija:</label>
+                    <label class="imgCityText"></label>
+                </div>
+                <div class="card col">
+                    <div class="row">
+                        <div class="catBtn catKafaBtn"><img src="./img/c2.png" class="catIcon"> Kafa</div>
+                        <div class="catBtn catPartyBtn"><img src="./img/c4.png" class="catIcon"> Party</div>
+                        <div class="catBtn catNargilaBtn"><img src="./img/c3.png" class="catIcon"> Nargila</div>
+                        <div class="catBtn catVeceraBtn"><img src="./img/c1.png" class="catIcon"> Večera</div>
+                        <div class="catBtn catDesertiBtn"><img src="./img/c5.png" class="catIcon"> Deserti</div>
+                        <div class="catBtn catSopingBtn"><img src="./img/c7.png" class="catIcon"> Shoping</div>
+                        <div class="catBtn catLifestyleBtn"><img src="./img/c6.png" class="catIcon"> Lifestyle</div>
+                        <div class="catBtn catKolekcijeBtn"><img src="./img/logo.png" class="catIcon"> Events</div>
+                    </div>
+                </div>
+                <div class="imgTextWrap col-12 mainGotoNews">
+                    <span class="pull-left fa fa-chevron-down"></span> 
+                    <span class="fa fa-bullhorn"></span> Novosti 
+                    <span class="pull-right fa fa-chevron-down"></span>
+                </div>
+            </div>
+            <!--category select-->
+
+
+            <!--News section-->
+            <div id="newsSectionMain" class="newsSection row">
+                <div class="card col">
+                    <div class="mainPageCard card-body row">
+                        <!--items-->
+                        <div class="newsItemWrap col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/logo.png" width="100%">
+                                </div>
+                                <div class="col newsTxt">
+                                    <h4 class="newsTitle">Hello</h4>
+                                    <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-12 moreOfThisBtn">
+                                    <a class="moreOfThisLink" href="#">Više...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="newsItemWrap col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/c5.png" width="100%">
+                                </div>
+                                <div class="col newsTxt">
+                                    <h4 class="newsTitle">And</h4>
+                                    <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-12 moreOfThisBtn">
+                                    <a class="moreOfThisLink" href="#">Više...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="newsItemWrap col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/c7.png" width="100%">
+                                </div>
+                                <div class="col newsTxt">
+                                    <h4 class="newsTitle">Wellcome</h4>
+                                    <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-12 moreOfThisBtn">
+                                    <a class="moreOfThisLink" href="#">Više...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="newsItemWrap col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/c6.png" width="100%">
+                                </div>
+                                <div class="col newsTxt">
+                                    <h4 class="newsTitle">To our</h4>
+                                    <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-12 moreOfThisBtn">
+                                    <a class="moreOfThisLink" href="#">Više...</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="newsItemWrap col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./img/c3.png" width="100%">
+                                </div>
+                                <div class="col newsTxt">
+                                    <h4 class="newsTitle">New App</h4>
+                                    <p class="newsContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-12 moreOfThisBtn">
+                                    <a class="moreOfThisLink" href="#">Više...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--items-->                        
+                    </div>
+                </div>
+            </div>
+            <!--News section-->
+
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="js/navbar.js"></script>
+
+        <script type="text/javascript" src="http://www.geoplugin.net/javascript.gp"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
